@@ -1,6 +1,7 @@
 
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -26,7 +27,9 @@ public class MyServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		LocalDateTime dateTime = LocalDateTime.now();
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("/n").append(dateTime.toString());
 	}
 
 	/**
