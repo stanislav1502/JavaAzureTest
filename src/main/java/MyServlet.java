@@ -29,7 +29,7 @@ public class MyServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		LocalDateTime dateTime = LocalDateTime.now();
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.getWriter().append"\n").append(dateTime.toString());
+		response.getWriter().append("\n").append(dateTime.toString());
 	}
 
 	/**
